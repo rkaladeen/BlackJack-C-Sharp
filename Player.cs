@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace BlackJack {
@@ -14,6 +15,11 @@ namespace BlackJack {
     }
 
     public Card discard(int ind) {
+      if(Hand.Count == 0){
+        throw new Exception("Hand is empty");
+      } else if(ind >= Hand.Count) {
+        throw new Exception("Card Index out of range");
+      }
       Card temp = Hand[ind];
       Hand.Remove(Hand[ind]);
       return temp;
