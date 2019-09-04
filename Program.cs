@@ -6,7 +6,13 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Deck first = new Deck();
+            // first.shuffle();
+            // Console.WriteLine(first.deal().Show());
+
+            // first.reset();
+            Console.WriteLine(first.deal().Show());
+
         }
     }
 }
