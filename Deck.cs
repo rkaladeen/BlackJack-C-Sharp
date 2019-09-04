@@ -33,14 +33,10 @@ namespace BlackJack {
       cards = new List<Card>();
       List<string> values = new List<string>(){"A","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
       List<string> suits = new List<string>(){"Hearts","Diamonds","Spades","Clubs"};
-      int deckSize = 0;
 
       for(int i = 0; i < suits.Count; i++) {
         for(int j = 0; j < values.Count; j++) {
-          if(deckSize != 52) {
-            this.cards.Add(new Card(suits[i], values[j]));
-          }
-          deckSize ++;
+          this.cards.Add(new Card(suits[i], values[j]));
         }
       }
     }
