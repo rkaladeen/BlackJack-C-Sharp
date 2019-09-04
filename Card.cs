@@ -8,7 +8,7 @@ namespace BlackJack {
     }
 
     public string Show() {
-      string card = $"Your where dealt {this.value} of {this.suit}";     
+      string card = $"{this.value} of {this.suit}";     
       return card;
     }
   }
